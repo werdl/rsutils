@@ -1,7 +1,10 @@
 mod test;
 use std::process;
 
+fn four() -> i32 {
+    return 4i32;
+}
 
 fn main() {
-    assert!(2+2==4, 3+3==5);
+    test_fn!(four(), 4i32);
 }
